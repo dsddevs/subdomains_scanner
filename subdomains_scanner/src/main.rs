@@ -14,7 +14,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
 
     let domain = &args[1];
     let response = get_response(domain).await?;
-    create_text_file(&response.as_bytes())?;
+    create_json_file(&response.as_bytes())?;
     Ok(())
 }
 
