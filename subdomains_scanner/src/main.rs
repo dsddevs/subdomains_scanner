@@ -26,7 +26,7 @@ async fn get_response(domain: &str) -> Result<String, Box<dyn Error>> {
     Ok(pretty)
 }
 
-fn create_text_file(response: &[u8]) -> Result<(), Box<dyn Error>> {
+fn create_json_file(response: &[u8]) -> Result<(), Box<dyn Error>> {
     let mut file = File::create("subdomains.json")?;
     file.write_all(response)?;
     Ok(())
