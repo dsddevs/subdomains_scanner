@@ -25,8 +25,8 @@ cargo build --release
 cargo run <domain>
 ```
 ## ✅ This will:
-- Fetch all matching certificates for example.com and its subdomains
-- Save them in a file called subdomains.txt
+- Fetch all matching certificates for example: dsd.com and its subdomains
+- Save them in a file called subdomains.json
 - Print formatted certificate metadata to the console
 
 ## 📂 Output
